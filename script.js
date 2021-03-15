@@ -91,7 +91,7 @@ var display5Day = function(weather){
        forecastEl.classList = "card bg-primary text-light m-2";
  
        var forecastDate = document.createElement("h5")
-       forecastDate.textContent= moment.unix(dailyForecast.dt).format("D MMM");
+       forecastDate.textContent= moment.unix(dailyForecast.dt).format("dddd, D MMM");
        forecastDate.classList = "card-header text-center"            
      
        var weatherIcon = document.createElement("img")
